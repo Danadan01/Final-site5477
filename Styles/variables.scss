@@ -40,8 +40,6 @@ $bold: 700;
     background: $gradient-red-text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
 }
 .h2-font{
     font-family: 'Montserrat';
@@ -67,7 +65,11 @@ $bold: 700;
     line-height: 17px;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: $main-regular;
+    color: $active-regular;
+    &:not(.no-hover):hover{
+        color: $accent;
+        cursor: pointer;
+    }
 }
 .h4-font{
     font-family: 'Montserrat';
@@ -83,6 +85,14 @@ $bold: 700;
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
+    color: #000000;
+}
+.paragraph-font-small{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
     color: #000000;
 }
 .list-font{
@@ -111,4 +121,10 @@ $bold: 700;
 .side-padding{
     padding: 0px 160px;
 }
+.active{
+    background: $gradient-red-text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+  }
+
 

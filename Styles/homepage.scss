@@ -11,7 +11,7 @@ body {
 
 .header-main {
 	padding-top: 55px;
-
+  padding-bottom: 60px;
 	header {
 		display: flex;
 		justify-content: space-between;
@@ -108,3 +108,142 @@ body {
 		color: $basic-white;
 	}
 }
+
+.tabs-section{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 60px;
+	padding: 60px 120px;
+	.tab-names{
+		display: flex;
+		flex-direction: column;
+    align-items: flex-end;
+		gap: 30px;
+		-webkit-text-fill-color: $grey-text;
+		h2{
+			cursor: pointer;
+      &:nth-child(1){
+        max-width: 215px;
+      }
+      &:nth-child(2){
+        max-width: 375px;
+      }
+      &:nth-child(3){
+        max-width: 210px;
+      }
+      &:nth-child(4){
+        max-width: 360px;
+      }
+			&:not(.active):hover{
+				-webkit-text-fill-color: $accent;
+			}
+		} 
+	}
+	.tab-content {
+		display: block;
+
+    &.hidden {
+      display: none;
+    }
+
+		h2 {
+			color: $basic-white;
+      margin-bottom: 30px;
+		}
+
+		p {
+			max-width: 860px;
+			color: $basic-white;
+			font-size: 19px;
+			line-height: 30px;
+		}
+	}
+	
+}
+
+.services-section{
+  .small{
+    max-width: 95px;
+    margin-bottom: 10px;
+  }
+
+  h2{
+    margin-bottom: 60px;
+  }
+
+  a{
+    text-decoration: none;
+  }
+  .services-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 60px;
+    .service-box{
+      max-width: 493px;
+      img{
+        margin-bottom: 30px;
+      }
+     h3{
+      color: $active-regular;
+      margin-bottom: 15px;
+     }
+     p{
+      max-width: 495px;
+      color: $basic-white;
+     }
+    }
+  }
+}
+.shadow1{
+  max-width: 1880px;
+  height: 10px;
+  background: #CACADB;
+  margin: 0 auto;
+  border-radius: 0px 0px 12px 12px;
+}
+.shadow2{
+  max-width: 1840px;
+  height: 10px;
+  background: #E7E7F2;
+  margin: 0 auto;
+  border-radius: 0px 0px 12px 12px;
+  margin-bottom: 60px;
+}
+.quote-section{
+  display: flex;
+  margin-bottom: 30px;
+  .quote-box{
+    width: 1200px;
+    height: 300px;
+    background: $gray-bg;
+    padding: 30px 30px;
+    a{
+      margin-bottom: 5px;
+      text-decoration: none;
+    }
+    h2{
+      max-width: 1140px;
+      margin-bottom: 30px;
+    }
+    h4{
+      color: $grey-text;
+      margin-bottom: 5px;
+    }
+    p{
+      color: $grey-text;
+    }
+  }
+}
+.blue-dots{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 60px;
+}
+.trust-phrase{
+  color: $main-regular;
+  text-align: center;
+}
+

@@ -8,8 +8,6 @@
   background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
 }
 
 .h2-font {
@@ -38,7 +36,11 @@
   line-height: 17px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #323264;
+  color: #24A3FF;
+}
+.h3-caps-font:not(.no-hover):hover {
+  color: #F0145A;
+  cursor: pointer;
 }
 
 .h4-font {
@@ -56,6 +58,15 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
+  color: #000000;
+}
+
+.paragraph-font-small {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
   color: #000000;
 }
 
@@ -87,4 +98,10 @@
 
 .side-padding {
   padding: 0px 160px;
+}
+
+.active {
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }/*# sourceMappingURL=variables.css.map */
