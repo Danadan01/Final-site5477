@@ -14,3 +14,9 @@ $(".tab-name").click(function () {
 
   currentTarget.addClass("active");
 })
+
+$(".slider").slick({
+  dots: true,
+  arrows: false,
+  
+});

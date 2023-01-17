@@ -40,6 +40,11 @@ $bold: 700;
     background: $gradient-red-text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    @media (max-width: 990px) {
+        font-size: 30px;
+        line-height: 40px;
+    }
 }
 .h2-font{
     font-family: 'Montserrat';
@@ -48,6 +53,11 @@ $bold: 700;
     font-size: 30px;
     line-height: 37px;
     color: $main-regular;
+
+    @media (max-width: 990px) {
+        font-size: 24px;
+        line-height: 30px;
+    }
 }
 .h3-font{
     font-family: 'Montserrat';
@@ -106,7 +116,7 @@ $bold: 700;
 .link-font{
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 16px;
     line-height: 20px;
     color: $active-regular;
@@ -120,6 +130,14 @@ $bold: 700;
 }
 .side-padding{
     padding: 0px 160px;
+
+    @media (max-width: 1440px) {
+        padding: 0px 60px;
+    }
+
+    @media (max-width: 650px) {
+        padding: 0px 30px;
+    }
 }
 .active{
     background: $gradient-red-text;
@@ -127,4 +145,18 @@ $bold: 700;
       -webkit-text-fill-color: transparent;
   }
 
+.hidden-media {
+    @media (max-width: 880px) {
+        display: none !important; 
+    }
 
+    @media (max-width: 800px) {
+        display: none !important; 
+    }
+
+}
+
+
+
+
+  
