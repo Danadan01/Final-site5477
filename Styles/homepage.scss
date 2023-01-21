@@ -14,23 +14,9 @@ body {
   padding-bottom: 60px;
 	overflow: hidden;
 	
-
 	@media (max-width: 880px) {
 		padding-top: 0px;
 		position: relative;
-
-		&::before {
-			content: "";
-			background: $grey-text;
-			opacity: 0.2;
-			position: absolute;
-			max-width: 880px;
-			width: 100%;
-			max-height: 70px;
-			height: 100%;
-			z-index: 1;
-			left: 0px;
-		}
 	}
 
 	header {
@@ -39,10 +25,16 @@ body {
 		align-items: center;
 		position: relative;
 		z-index: 1;
-
+		
 		@media (max-width: 880px) {
 			flex-direction: column-reverse;
 			align-items: unset;
+			background: rgba(245, 245, 250, 0.2);
+			max-width: 880px;
+			width: 100%;
+			position: absolute;
+			right: 0;
+			padding: 0px 20px;
 		}
 	}
 }
@@ -52,7 +44,11 @@ body {
 	@media (max-width: 880px) {
 		position: absolute;
 		top: 80px;
-		left: -20px;
+		left: 20px;
+	}
+
+	@media (max-width: 510px) {
+		top: 60px;
 	}
 
 	img {
@@ -61,9 +57,6 @@ body {
 			width: 100%;
 		}
 	}
-
-	
-	
 }
 
 .header-top-box ul {
@@ -74,6 +67,10 @@ body {
 	@media (max-width: 880px) {
 		justify-content: space-between;
 		height: 70px;
+	}
+
+	@media (max-width: 510px) {
+		height: 55px;
 	}
 
 	.dot {
@@ -137,19 +134,8 @@ body {
 	
 	@media (max-width: 880px) {
 		position: absolute;
-		left: 83%;
-	}
-
-	@media (max-width: 700px) {
-		left: 78%;
-	}
-
-	@media (max-width: 600px) {
-		left: 75%;
-	}
-
-	@media (max-width: 510px) {
-		left: 70%;
+		right: 0;
+		margin-right: 30px;
 	}
 
 	div {
@@ -299,21 +285,23 @@ body {
   gap: 300px;
 
 	@media (max-width: 880px) {
-		margin-top: -85px;
+		margin-top: -15px;
 	}	
 
 	@media (max-width: 650px) {
-		margin-top: -185px;
+		margin-top: -85px;
 		gap: 100px;
 	}
 
 	@media (max-width: 510px) {
-		height: 90vh;
+		height: 100vh;
 		gap: 0px;
+		margin-top: -140px;
 	}
 
 	@media (max-width: 440px) {
-		height: 82vh;
+		height: 83vh;
+		margin-top: -116px;
 	}
 
 	.main-pic {
@@ -388,10 +376,19 @@ body {
 		max-width: 375px;
 		width: 100%;
 		overflow: auto;
-		-webkit-text-fill-color: $grey-text;
 
 		.tab-name {
-			position: relative;
+			color: $grey-text;
+			font-family: 'Montserrat';
+			font-style: normal;
+			font-weight: $bold;
+			font-size: 38px;
+			line-height: 46px;
+			
+			@media (max-width: 990px) {
+				font-size: 30px;
+				line-height: 40px;
+			}
 		}
 
 		h2:nth-child(2n) {
