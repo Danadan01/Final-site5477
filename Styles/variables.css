@@ -128,7 +128,7 @@
   -webkit-text-fill-color: transparent;
 }
 
-@media (max-width: 880px) {
+@media (max-width: 950px) {
   .hidden-media {
     display: none !important;
   }
