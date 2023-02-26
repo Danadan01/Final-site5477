@@ -1,1 +1,140 @@
-/*# sourceMappingURL=variables.css.map */
+@import url("https://fonts.cdnfonts.com/css/montserrat");
+.hero-font {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media (max-width: 990px) {
+  .hero-font {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+.h2-font {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  color: #323264;
+}
+@media (max-width: 990px) {
+  .h2-font {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
+.h3-font {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  color: #323264;
+}
+
+.h3-caps-font {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #24A3FF;
+}
+.h3-caps-font:not(.no-hover):hover {
+  color: #F0145A;
+  cursor: pointer;
+}
+
+.h4-font {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #323264;
+}
+
+.paragraph-font {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.paragraph-font-small {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.list-font {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.link-font {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #24A3FF;
+  text-decoration: none;
+}
+.link-font:hover {
+  color: #F0145A;
+}
+
+.gradient-supersoft {
+  background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+}
+
+.side-padding {
+  padding: 0px 160px;
+}
+@media (max-width: 1440px) {
+  .side-padding {
+    padding: 0px 60px;
+  }
+}
+@media (max-width: 650px) {
+  .side-padding {
+    padding: 0px 30px;
+  }
+}
+
+.active {
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 950px) {
+  .hidden-media {
+    display: none !important;
+  }
+}
+@media (max-width: 800px) {
+  .hidden-media {
+    display: none !important;
+  }
+}/*# sourceMappingURL=variables.css.map */
